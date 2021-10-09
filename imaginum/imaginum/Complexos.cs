@@ -21,14 +21,16 @@ namespace imaginum{
         }
         
         public double Modulo_Img(){
-            double h;
-            h = Math.Sqrt( (Math.Pow(real,2.0) + Math.Pow(imaginario,2.0)) ) ;
+            double h = Math.Sqrt( (Math.Pow(real,2.0) + Math.Pow(imaginario,2.0)) ) ;
             return h;
         }
 
-        public string ImprimeImaginario()
-        {
-            return (real + " " + imaginario +"i");
+        public string ImprimeImaginario(){
+            if (imaginario > 0){
+                return (real + "+" + imaginario + "i");
+            }else{
+                return (real + "" + imaginario + "i");
+            }
         }
     }
 }
