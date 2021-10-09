@@ -30,8 +30,9 @@ namespace imaginum
             Console.Write("Informe a parte imaginaria do primeiro numero: ");
             //y = double.Parse(Console.ReadLine());
             while (!(double.TryParse(Console.ReadLine(), out y))) { Console.Write("\nInforme a parte imaginaria do primeiro numero: "); }
-            Console.WriteLine(n1.ImprimeImaginario());
             n1.SetImag(x,y);
+            Console.WriteLine(n1.ImprimeImaginario());
+            
             
             Console.Write("\nInforme a parte real do segundo numero: ");
             //x = double.Parse(Console.ReadLine());
@@ -39,8 +40,9 @@ namespace imaginum
             Console.Write("Informe a parte imaginaria do segundo numero: ");
             //y = double.Parse(Console.ReadLine());
             while (!(double.TryParse(Console.ReadLine(), out y))) { Console.Write("\nInforme a parte imaginaria do segundo numero: "); }
+            n2.SetImag(x, y);
             Console.WriteLine(n2.ImprimeImaginario());
-            n2.SetImag(x, y);           
+                       
         }
         static void Main()
         {
