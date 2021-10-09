@@ -1,0 +1,16 @@
+F:\Users\ADSM\source\repos\abnerdavi\imaginum\imaginum\imaginum\bin\Debug\net5.0\imaginum.exe
+F:\Users\ADSM\source\repos\abnerdavi\imaginum\imaginum\imaginum\bin\Debug\net5.0\imaginum.deps.json
+F:\Users\ADSM\source\repos\abnerdavi\imaginum\imaginum\imaginum\bin\Debug\net5.0\imaginum.runtimeconfig.json
+F:\Users\ADSM\source\repos\abnerdavi\imaginum\imaginum\imaginum\bin\Debug\net5.0\imaginum.runtimeconfig.dev.json
+F:\Users\ADSM\source\repos\abnerdavi\imaginum\imaginum\imaginum\bin\Debug\net5.0\imaginum.dll
+F:\Users\ADSM\source\repos\abnerdavi\imaginum\imaginum\imaginum\bin\Debug\net5.0\ref\imaginum.dll
+F:\Users\ADSM\source\repos\abnerdavi\imaginum\imaginum\imaginum\bin\Debug\net5.0\imaginum.pdb
+F:\Users\ADSM\source\repos\abnerdavi\imaginum\imaginum\imaginum\obj\Debug\net5.0\imaginum.csproj.AssemblyReference.cache
+F:\Users\ADSM\source\repos\abnerdavi\imaginum\imaginum\imaginum\obj\Debug\net5.0\imaginum.GeneratedMSBuildEditorConfig.editorconfig
+F:\Users\ADSM\source\repos\abnerdavi\imaginum\imaginum\imaginum\obj\Debug\net5.0\imaginum.AssemblyInfoInputs.cache
+F:\Users\ADSM\source\repos\abnerdavi\imaginum\imaginum\imaginum\obj\Debug\net5.0\imaginum.AssemblyInfo.cs
+F:\Users\ADSM\source\repos\abnerdavi\imaginum\imaginum\imaginum\obj\Debug\net5.0\imaginum.csproj.CoreCompileInputs.cache
+F:\Users\ADSM\source\repos\abnerdavi\imaginum\imaginum\imaginum\obj\Debug\net5.0\imaginum.dll
+F:\Users\ADSM\source\repos\abnerdavi\imaginum\imaginum\imaginum\obj\Debug\net5.0\ref\imaginum.dll
+F:\Users\ADSM\source\repos\abnerdavi\imaginum\imaginum\imaginum\obj\Debug\net5.0\imaginum.pdb
+F:\Users\ADSM\source\repos\abnerdavi\imaginum\imaginum\imaginum\obj\Debug\net5.0\imaginum.genruntimeconfig.cache
