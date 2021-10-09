@@ -14,8 +14,8 @@ namespace imaginum
             Console.WriteLine(">    4 - Divisão");
             Console.WriteLine(">    5 - Módulo");
             Console.WriteLine(">    6 - Sair");
-            Console.Write(">> Escolha a opção desejada: ");
-            while(!(int.TryParse(Console.ReadLine(),out op))){Console.Write("Escolha uma das opções acima: ");}      
+            Console.Write(">> Digite o numero da opção desejada: ");
+            while(!(int.TryParse(Console.ReadLine(),out op))){Console.Write(">> Digite o numero da opção desejada: ");}      
             return op;
             
         }
@@ -31,7 +31,7 @@ namespace imaginum
             //y = double.Parse(Console.ReadLine());
             while (!(double.TryParse(Console.ReadLine(), out y))) { Console.Write("\nInforme a parte imaginaria do primeiro numero: "); }
             n1.SetImag(x,y);
-            Console.WriteLine(n1.ImprimeImaginario());
+            Console.WriteLine(">>"+n1.ImprimeImaginario());
             
             
             Console.Write("\nInforme a parte real do segundo numero: ");
@@ -41,7 +41,7 @@ namespace imaginum
             //y = double.Parse(Console.ReadLine());
             while (!(double.TryParse(Console.ReadLine(), out y))) { Console.Write("\nInforme a parte imaginaria do segundo numero: "); }
             n2.SetImag(x, y);
-            Console.WriteLine(n2.ImprimeImaginario());
+            Console.WriteLine(">>"+n2.ImprimeImaginario());
                        
         }
         static void Main()
