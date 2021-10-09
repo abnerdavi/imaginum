@@ -20,7 +20,7 @@ namespace imaginum
             
         }
         
-        static void LeNumeros(ref Complexos n1, ref Complexos n2){
+        static void LeNumeros(ref Interface1 n1, ref Interface1 n2){
             double x, y;
 
             Console.Write("\nInforme a parte real do primeiro numero: ");
@@ -47,35 +47,37 @@ namespace imaginum
         static void Main()
         {
             int opcao = 0;
-            Complexos numero1 = new Complexos();
-            Complexos numero2 = new Complexos();
+            Interface1 numero1 = new Complexos();
+            Interface1 numero2 = new Complexos();
+            Interface1 Calculadora = new Complexos();
+
             
                 while (opcao != 6 ){
                     opcao = Menu();
                     switch (opcao){
                         case 1:
                             LeNumeros(ref numero1, ref numero2);
-                            Calculadora.Soma(numero1, numero2);
+                            Calculadora.Soma((Complexos)numero1, (Complexos)numero2);
                             break;
 
                         case 2:
                             LeNumeros(ref numero1, ref numero2);
-                            Calculadora.Subtracao(numero1, numero2);
+                            Calculadora.Subtracao((Complexos)numero1, (Complexos)numero2);
                             break;
 
                         case 3:
                             LeNumeros(ref numero1, ref numero2);
-                            Calculadora.Multiplicacao(numero1, numero2);
+                            Calculadora.Multiplicacao((Complexos)numero1,(Complexos)numero2);
                             break;
 
                         case 4:
                             LeNumeros(ref numero1, ref numero2);
-                            Calculadora.Divisao(numero1, numero2);
+                            Calculadora.Divisao((Complexos)numero1,(Complexos)numero2);
                             break;
 
                         case 5:
                             LeNumeros(ref numero1, ref numero2);
-                            Calculadora.Modulo(numero1, numero2);
+                            Calculadora.Modulo((Complexos)numero1,(Complexos)numero2);
                             break;
 
                         case 6:

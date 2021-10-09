@@ -8,10 +8,11 @@ using System.Threading.Tasks;
 //  https://brasilescola.uol.com.br/matematica/numeros-complexos.htm   
 //  https://matematicabasica.net/numeros-complexos/
 //  https://www.todamateria.com.br/numeros-complexos/ 
-
+/*
 namespace imaginum
 {
-    class Calculadora{
+    class Calculadora
+    {
         public static void Soma(Complexos nmr1, Complexos nmr2){//soma o nmr1 pelo nmr2
             Complexos sm = new Complexos(nmr1.real + nmr2.real, nmr1.imaginario + nmr2.imaginario);
             Console.WriteLine("\nA soma dos numeros complexos é: " + sm.ImprimeImaginario());
@@ -40,3 +41,4 @@ namespace imaginum
         }
     }
 }
+*/
