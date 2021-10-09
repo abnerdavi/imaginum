@@ -22,16 +22,18 @@ namespace imaginum
         static void LeNumeros(ref Complexos n1, ref Complexos n2){
             double x, y;
 
-            Console.Write("Informe a parte real do primeiro numero: ");
+            Console.Write("\nInforme a parte real do primeiro numero: ");
             x = double.Parse(Console.ReadLine());
             Console.Write("Informe a parte imaginaria do primeiro numero: ");
             y = double.Parse(Console.ReadLine());
+            Console.WriteLine(n1.ImprimeImaginario());
             n1.SetImag(x,y);
             
             Console.Write("\nInforme a parte real do segundo numero: ");
             x = double.Parse(Console.ReadLine());
             Console.Write("Informe a parte imaginaria do segundo numero: ");
             y = double.Parse(Console.ReadLine());
+            Console.WriteLine(n2.ImprimeImaginario());
             n2.SetImag(x, y);           
         }
         static void Main()
@@ -73,9 +75,10 @@ namespace imaginum
                         break;
 
                     default:
+                        Console.WriteLine("Opção inválida, tente novamente!");
                         break;
                 }
-                Console.WriteLine("Digite qualquer tecla para continuar...");
+                Console.WriteLine("\nDigite qualquer tecla para continuar...");
                 Console.ReadKey(true);
                 Console.Clear();
             }

@@ -26,7 +26,7 @@ namespace imaginum{
         }
 
         public string ImprimeImaginario(){
-            if (imaginario > 0){
+            if (imaginario >= 0){
                 return (real + "+" + imaginario + "i");
             }else{
                 return (real + "" + imaginario + "i");
