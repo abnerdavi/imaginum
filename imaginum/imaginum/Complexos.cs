@@ -25,5 +25,10 @@ namespace imaginum{
             h = Math.Sqrt( (Math.Pow(real,2.0) + Math.Pow(imaginario,2.0)) ) ;
             return h;
         }
+
+        public string ImprimeImaginario()
+        {
+            return (real + " " + imaginario +"i");
+        }
     }
 }

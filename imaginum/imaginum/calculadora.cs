@@ -30,7 +30,7 @@ namespace imaginum
             }
         }
 
-        public static void Multiplicacao(Complexos nmr1, Complexos nmr2)
+        public static void Multiplicacao(Complexos nmr1, Complexos nmr2)//multiplica o nmr1 pelo nmr2
         {
             Complexos produto = new();
 
@@ -42,21 +42,21 @@ namespace imaginum
                 Console.WriteLine("O produto dos numeros complexos é: " + produto.real + "-" + produto.imaginario + "i");
             }
 
-        }public static void Divisao(Complexos nmr1, Complexos nmr2)
+        }public static void Divisao(Complexos nmr1, Complexos nmr2)//divide o nmr1 pelo nmr2
         {
-            Complexos produto = new();
+            Complexos divisao = new Complexos(((nmr1.real * nmr2.real) + (nmr1.imaginario * -nmr2.imaginario)) / (Math.Pow(nmr2.real, 2.0) + Math.Pow(-nmr2.imaginario, 2.0)),
+                                                ((nmr1.imaginario * nmr2.real) - (nmr1.real * -nmr2.imaginario)) / (Math.Pow(nmr2.real, 2.0) + Math.Pow(-nmr2.imaginario, 2.0)));
 
-            double real = ( (nmr1.real * nmr2.real) + (nmr1.imaginario * -nmr2.imaginario) ) / ( Math.Pow(nmr2.real,2.0)+Math.Pow(-nmr2.imaginario,2.0) );
-            double imaginaria = ( (nmr1.imaginario * nmr2.real) - (nmr1.real * -nmr2.imaginario) ) / ( Math.Pow(nmr2.real, 2.0) + Math.Pow(-nmr2.imaginario,2.0) );
-
-            produto.SetImag( real, imaginaria);
-
-            if (produto.imaginario > 0){
-                Console.WriteLine("A divisao entre os numeros complexos é: " + produto.real + "+" + produto.imaginario + "i");
+            if (divisao.imaginario > 0){
+                Console.WriteLine("A divisao entre os numeros complexos é: " + divisao.real + "+" + divisao.imaginario + "i");
             }else{
-                Console.WriteLine("A divisao entre os numeros complexos é: " + produto.real + "-" + produto.imaginario + "i");
+                Console.WriteLine("A divisao entre os numeros complexos é: " + divisao.real + "-" + divisao.imaginario + "i");
             }
         }
 
+        public static void Modulo(Complexos nmr1, Complexos nmr2){
+            Console.WriteLine("O modulo de " + nmr1.ImprimeImaginario() + "é " + nmr1.Modulo_Img()); 
+            Console.WriteLine("O modulo de " + nmr2.ImprimeImaginario() + "é " + nmr2.Modulo_Img());
+        }
     }
 }

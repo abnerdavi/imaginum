@@ -13,15 +13,30 @@ namespace imaginum
             Console.WriteLine("> 3 - Multiplicação");
             Console.WriteLine("> 4 - Divisão");
             Console.WriteLine("> 5 - Módulo");
+            Console.WriteLine("> 6 - Sair");
+
             Console.WriteLine(">>Escolha a opção desejada\nR:");
             op = int.Parse(Console.ReadLine());
 
             return op;
         }
-
+        
         static void Main(string[] args)
         {
-            Menu();
+            
+            try
+            {
+                int opcao = Menu();
+                while (opcao != 6 )
+                {
+                   
+                }
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
         }
     }
 }
